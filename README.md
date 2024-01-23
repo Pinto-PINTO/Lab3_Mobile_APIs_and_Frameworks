@@ -6,6 +6,7 @@
 
 This repository explores and compares the usage of GraphQL and REST API in mobile application development. The focus is on understanding the ease of data retrieval and manipulation using both technologies.
 
+
 ## GraphQL
 
 #### Postman GET Request Screenshot - GraphQL
@@ -14,11 +15,9 @@ This repository explores and compares the usage of GraphQL and REST API in mobil
 
 In this example, we demonstrate a simple GraphQL GET request using Postman. The fetch URL is:
 
-<details>
-  <summary>Click to Copy GraphQL URL</summary>
-  
-  [https://swapi-graphql.netlify.app/.netlify/functions/index?query={allFilms{films{title, releaseDate}}}]()
-</details>
+```plaintext
+https://swapi-graphql.netlify.app/.netlify/functions/index?query={allFilms{films{title, releaseDate}}}
+```
 
 GraphQL makes data retrieval straightforward as we can specify the exact structure of the response we need. The screenshot above showcases the ease of obtaining desired data without the need for additional client-side deconstruction.
 
@@ -28,6 +27,7 @@ GraphQL makes data retrieval straightforward as we can specify the exact structu
 
 The console output in `script.js` demonstrates the simplicity of handling the response when making a fetch request with GraphQL. The data received is in the exact format we requested, reducing the need for additional processing.
 
+
 ## REST API
 
 #### Postman GET Request Screenshot - REST API
@@ -36,11 +36,9 @@ The console output in `script.js` demonstrates the simplicity of handling the re
 
 In contrast to GraphQL, the Postman GET request for a REST API endpoint is:
 
-<details>
-  <summary>Click to Copy REST API URL</summary>
-  
-  [https://swapi.dev/api/films](https://swapi.dev/api/films)
-</details>
+```plaintext
+https://swapi.dev/api/films
+```
 
 While REST API provides the necessary data, it may be less structured, requiring additional client-side deconstruction for optimal usage.
 
